@@ -1,0 +1,19 @@
+﻿<Window x:Class="MyPasswordPrompt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FontSize="20"
+        WindowStartupLocation="CenterScreen"
+        Title="MyPasswordPrompt" Height="200.059" Width="631.971">
+    <DockPanel Margin="5">
+        <Label Name="lPrompt" DockPanel.Dock="Top">Prompt</Label>
+        <StackPanel Orientation="Horizontal"  DockPanel.Dock="Bottom">
+            <Button IsDefault="True" Name="bOk" Click="bOk_Click" Padding="10">_Proceed</Button>
+            <Button Name="bSave" Click="bOk_Click" Padding="10" Margin="15,0,0,0">_Save and proceed</Button>
+            <Button Name="bDelete" Click="bDelete_Click" Padding="10" Margin="15,0,0,0">_Delete</Button>
+        </StackPanel>
+        <Grid Margin="0,5">
+            <PasswordBox Name="tbPass" Visibility="Hidden" />
+            <TextBox Name="tbUser" Visibility="Hidden" />
+        </Grid>
+    </DockPanel>
+</Window>
