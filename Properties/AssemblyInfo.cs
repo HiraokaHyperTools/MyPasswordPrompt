@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HIRAOKA HYPERS TOOLS, Inc.")]
 [assembly: AssemblyProduct("MyPasswordPrompt")]
-[assembly: AssemblyCopyright("Copyright (c) 2017")]
+[assembly: AssemblyCopyright("Copyright (c) 2017,2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // すべての値を指定するか、下のように '*' を使ってビルドおよびリビジョン番号を 
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly:     AssemblyVersion("0.1")]//here
-[assembly: AssemblyFileVersion("0.1")]//here
+[assembly:     AssemblyVersion("0.2")]//here
+[assembly: AssemblyFileVersion("0.2")]//here

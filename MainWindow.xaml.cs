@@ -44,19 +44,20 @@ namespace MyPasswordPrompt {
                     SetValue(FocusManager.FocusedElementProperty, tbUser);
                 }
             }
-
         }
+
+        string body => isPass ? tbPass.Password : tbUser.Text;
 
         bool isPass;
         IsolatedStorageFile dir;
         String key;
 
         private void bOk_Click(object sender, RoutedEventArgs e) {
-            Console.Write(tbPass.Password);
+            Console.Write(body);
             if (object.ReferenceEquals(sender, bSave)) {
                 using (var fs = dir.CreateFile(key)) {
                     new BinaryWriter(fs).Write(Encoding.ASCII.GetBytes(Convert.ToBase64String(Encoding.UTF8.GetBytes(
-                        isPass ? tbPass.Password : tbUser.Text
+                        body
                         ))));
                 }
             }

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         FontSize="20"
         WindowStartupLocation="CenterScreen"
-        Title="MyPasswordPrompt" Height="200.059" Width="631.971">
+        Title="MyPasswordPrompt" Height="250" Width="631.971">
     <DockPanel Margin="5">
         <Label Name="lPrompt" DockPanel.Dock="Top">Prompt</Label>
         <StackPanel Orientation="Horizontal"  DockPanel.Dock="Bottom">
